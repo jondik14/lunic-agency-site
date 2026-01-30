@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from 'react';
 
 interface LazyImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   src: string;
-  /** Load when within this distance of viewport. Default 50vh = start loading well before visible. */
+  /** Load when within this distance of viewport (px or % only). Default 400px = start loading before visible. */
   rootMargin?: string;
 }
 
@@ -12,7 +12,7 @@ interface LazyImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
  */
 const LazyImage: React.FC<LazyImageProps> = ({
   src,
-  rootMargin = '50vh',
+  rootMargin = '400px',
   alt = '',
   loading,
   decoding = 'async',

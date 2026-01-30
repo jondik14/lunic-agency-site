@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* Cirka from Fonts/Cirka (project assets) */
 @font-face {
   font-family: 'Cirka';

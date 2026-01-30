@@ -67,7 +67,7 @@ const ProcessSection: React.FC = () => {
               </div>
               </div>
               <div className="process-card-reflection hidden md:block absolute top-full -mt-px left-0 right-0 h-[200px] overflow-hidden pointer-events-none rounded-b-3xl" style={{ opacity: 0.6 }} aria-hidden>
-                <LazyImage src="/Assets/discovery-first-reflection.png" alt="" className="w-full h-full object-cover object-top" rootMargin="50vh" />
+                <LazyImage src="/Assets/discovery-first-reflection.png" alt="" className="w-full h-full object-cover object-top" rootMargin="400px" />
               </div>
             </motion.div>
           </div>
@@ -91,13 +91,13 @@ const ProcessSection: React.FC = () => {
                 </div>
                 <div className="process-card-bottom">
                   <div className="phoneStage">
-                    <LazyImage className="phone phoneLeft" src="/Assets/mobile-shot-1.png" alt="" rootMargin="50vh" />
-                    <LazyImage className="phone phoneRight" src="/Assets/mobile-shot-2.png" alt="" rootMargin="50vh" />
+                    <LazyImage className="phone phoneLeft" src="/Assets/mobile-shot-1.png" alt="" rootMargin="400px" />
+                    <LazyImage className="phone phoneRight" src="/Assets/mobile-shot-2.png" alt="" rootMargin="400px" />
                   </div>
                 </div>
               </div>
               <div className="process-card-reflection hidden md:block absolute top-full -mt-px left-0 right-0 h-[200px] overflow-hidden pointer-events-none rounded-b-3xl" style={{ opacity: 0.6 }} aria-hidden>
-                <LazyImage src="/Assets/mobile-first-design-reflection.png" alt="" className="w-full h-full object-cover object-top" rootMargin="50vh" />
+                <LazyImage src="/Assets/mobile-first-design-reflection.png" alt="" className="w-full h-full object-cover object-top" rootMargin="400px" />
               </div>
             </motion.div>
           </div>
@@ -121,12 +121,12 @@ const ProcessSection: React.FC = () => {
                 </div>
                 <div className="process-card-bottom">
                   <div className="flex flex-wrap items-center justify-center w-full md:w-[538px] h-auto md:h-[300px]">
-                    <LazyImage src="/Assets/mcbook-google-data.png" alt="MacBook with analytics" className="w-full max-w-full md:max-w-[770px] h-auto object-contain" rootMargin="50vh" />
+                    <LazyImage src="/Assets/mcbook-google-data.png" alt="MacBook with analytics" className="w-full max-w-full md:max-w-[770px] h-auto object-contain" rootMargin="400px" />
                   </div>
                 </div>
               </div>
               <div className="process-card-reflection hidden md:block absolute top-full -mt-px left-0 right-0 h-[200px] overflow-hidden pointer-events-none rounded-b-3xl" style={{ opacity: 0.6 }} aria-hidden>
-                <LazyImage src="/Assets/conversion-driven-reflection.png" alt="" className="w-full h-full object-cover object-top object-[right_top]" rootMargin="50vh" />
+                <LazyImage src="/Assets/conversion-driven-reflection.png" alt="" className="w-full h-full object-cover object-top object-[right_top]" rootMargin="400px" />
               </div>
             </motion.div>
           </div>

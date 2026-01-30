@@ -40,7 +40,7 @@ const ServicesSection: React.FC = () => {
           playsInline
           aria-label="Ambient background video"
           style={{ willChange: 'auto' }}
-          rootMargin="50vh"
+          rootMargin="400px"
         />
         {/* Blur overlay: fades in from top (mask) so no harsh line; video clear at top, more blurred/dark toward bottom */}
         <div
