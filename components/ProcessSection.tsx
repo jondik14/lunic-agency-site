@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import Button from './Button';
 import DiscoveryCtaCarousels from './DiscoveryCtaCarousels';
+import LazyImage from './LazyImage';
 
 const ProcessSection: React.FC = () => {
   return (
@@ -66,7 +67,7 @@ const ProcessSection: React.FC = () => {
               </div>
               </div>
               <div className="process-card-reflection hidden md:block absolute top-full -mt-px left-0 right-0 h-[200px] overflow-hidden pointer-events-none rounded-b-3xl" style={{ opacity: 0.6 }} aria-hidden>
-                <img src="/Assets/discovery-first-reflection.png" alt="" className="w-full h-full object-cover object-top" loading="lazy" decoding="async" />
+                <LazyImage src="/Assets/discovery-first-reflection.png" alt="" className="w-full h-full object-cover object-top" rootMargin="50vh" />
               </div>
             </motion.div>
           </div>
@@ -90,13 +91,13 @@ const ProcessSection: React.FC = () => {
                 </div>
                 <div className="process-card-bottom">
                   <div className="phoneStage">
-                    <img className="phone phoneLeft" src="/Assets/mobile-shot-1.png" alt="" loading="lazy" decoding="async" />
-                    <img className="phone phoneRight" src="/Assets/mobile-shot-2.png" alt="" loading="lazy" decoding="async" />
+                    <LazyImage className="phone phoneLeft" src="/Assets/mobile-shot-1.png" alt="" rootMargin="50vh" />
+                    <LazyImage className="phone phoneRight" src="/Assets/mobile-shot-2.png" alt="" rootMargin="50vh" />
                   </div>
                 </div>
               </div>
               <div className="process-card-reflection hidden md:block absolute top-full -mt-px left-0 right-0 h-[200px] overflow-hidden pointer-events-none rounded-b-3xl" style={{ opacity: 0.6 }} aria-hidden>
-                <img src="/Assets/mobile-first-design-reflection.png" alt="" className="w-full h-full object-cover object-top" loading="lazy" decoding="async" />
+                <LazyImage src="/Assets/mobile-first-design-reflection.png" alt="" className="w-full h-full object-cover object-top" rootMargin="50vh" />
               </div>
             </motion.div>
           </div>
@@ -120,12 +121,12 @@ const ProcessSection: React.FC = () => {
                 </div>
                 <div className="process-card-bottom">
                   <div className="flex flex-wrap items-center justify-center w-full md:w-[538px] h-auto md:h-[300px]">
-                    <img src="/Assets/mcbook-google-data.png" alt="MacBook with analytics" className="w-full max-w-full md:max-w-[770px] h-auto object-contain" loading="lazy" decoding="async" />
+                    <LazyImage src="/Assets/mcbook-google-data.png" alt="MacBook with analytics" className="w-full max-w-full md:max-w-[770px] h-auto object-contain" rootMargin="50vh" />
                   </div>
                 </div>
               </div>
               <div className="process-card-reflection hidden md:block absolute top-full -mt-px left-0 right-0 h-[200px] overflow-hidden pointer-events-none rounded-b-3xl" style={{ opacity: 0.6 }} aria-hidden>
-                <img src="/Assets/conversion-driven-reflection.png" alt="" className="w-full h-full object-cover object-top object-[right_top]" loading="lazy" decoding="async" />
+                <LazyImage src="/Assets/conversion-driven-reflection.png" alt="" className="w-full h-full object-cover object-top object-[right_top]" rootMargin="50vh" />
               </div>
             </motion.div>
           </div>

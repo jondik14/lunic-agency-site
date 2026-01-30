@@ -2,15 +2,16 @@ import React, { useRef, useEffect, useState, forwardRef } from 'react';
 
 interface LazyVideoProps extends React.VideoHTMLAttributes<HTMLVideoElement> {
   src: string;
-  /** Load when within this distance of viewport. Default 100px */
+  /** Load when within this distance of viewport. Default 50vh = start loading well before visible. */
   rootMargin?: string;
 }
 
 /**
  * Video that only loads its source when it enters the viewport. Speeds up initial page load.
+ * Uses a large default rootMargin so playback is ready by the time the user scrolls to it.
  */
 const LazyVideo = forwardRef<HTMLVideoElement, LazyVideoProps>(
-  ({ src, rootMargin = '100px', ...props }, ref) => {
+  ({ src, rootMargin = '50vh', ...props }, ref) => {
     const innerRef = useRef<HTMLVideoElement>(null);
     const setRef = (el: HTMLVideoElement | null) => {
       innerRef.current = el;

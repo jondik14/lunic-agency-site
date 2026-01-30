@@ -429,8 +429,10 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
           </div>
         </div>
 
-        {/* Large "LUNIC Studio" hexa — sits at bottom of page; minimal gap above */}
-        <FooterTextEffect />
+        {/* Large "LUNIC Studio" hexa — sits at bottom of page; hidden on mobile */}
+        <div className="hidden md:block">
+          <FooterTextEffect />
+        </div>
       </footer>
     </div>
   );
