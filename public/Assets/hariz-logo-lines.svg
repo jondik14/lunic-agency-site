@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="hook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1576.26 1371.87">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: url(#radial-gradient-2);
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        stroke: url(#radial-gradient-7);
+      }
+
+      .cls-10, .cls-11, .cls-12 {
+        fill: #231f20;
+      }
+
+      .cls-3 {
+        stroke: url(#radial-gradient-8);
+      }
+
+      .cls-4 {
+        stroke: url(#radial-gradient);
+      }
+
+      .cls-5 {
+        stroke: url(#radial-gradient-5);
+      }
+
+      .cls-6 {
+        stroke: url(#radial-gradient-3);
+      }
+
+      .cls-7 {
+        stroke: url(#radial-gradient-9);
+      }
+
+      .cls-11 {
+        font-family: ProximaNova-Bold, 'Proxima Nova';
+        font-size: 46.87px;
+        font-weight: 700;
+        letter-spacing: .89em;
+      }
+
+      .cls-12 {
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+        font-size: 12px;
+      }
+
+      .cls-8 {
+        stroke: url(#radial-gradient-6);
+      }
+
+      .cls-9 {
+        stroke: url(#radial-gradient-4);
+      }
+
+      .cls-13 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="12.92" y1="13.01" x2="1584.83" y2="1364.52" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fbad1a"/>
+      <stop offset=".03" stop-color="#fbb228"/>
+      <stop offset=".16" stop-color="#fcc660"/>
+      <stop offset=".29" stop-color="#fdd791"/>
+      <stop offset=".42" stop-color="#fde5b8"/>
+      <stop offset=".55" stop-color="#fef0d7"/>
+      <stop offset=".67" stop-color="#fef8ed"/>
+      <stop offset=".79" stop-color="#fefdfa"/>
+      <stop offset=".89" stop-color="#fff"/>
+    </linearGradient>
+    <radialGradient id="radial-gradient" cx="1082.66" cy="660.47" fx="1082.66" fy="660.47" r="408.4" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#301d31" stop-opacity=".8"/>
+      <stop offset=".46" stop-color="#3b293c" stop-opacity=".75"/>
+      <stop offset=".69" stop-color="#645564" stop-opacity=".6"/>
+      <stop offset=".87" stop-color="#a9a1a9" stop-opacity=".33"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-2" cx="1057.31" cy="668.96" fx="1057.31" fy="668.96" r="408.4" xlink:href="#radial-gradient"/>
+    <radialGradient id="radial-gradient-3" cx="666.31" cy="679.49" fx="666.31" fy="679.49" r="408.4" gradientTransform="translate(10.04 20.12) scale(.97) skewX(.65)" xlink:href="#radial-gradient"/>
+    <radialGradient id="radial-gradient-4" cx="642.21" cy="687.97" fx="642.21" fy="687.97" gradientTransform="translate(10.23 22.26) scale(.97) skewX(.65)" xlink:href="#radial-gradient"/>
+    <radialGradient id="radial-gradient-5" cx="303.9" cy="719.55" fx="303.9" fy="719.55" xlink:href="#radial-gradient"/>
+    <radialGradient id="radial-gradient-6" cx="1138.67" cy="673.22" fx="1138.67" fy="673.22" r="408.4" xlink:href="#radial-gradient"/>
+    <radialGradient id="radial-gradient-7" cx="715.88" cy="765.41" fx="715.88" fy="765.41" r="422.13" gradientTransform="translate(-406.99 -462.76) scale(1.6)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#301d31" stop-opacity=".7"/>
+      <stop offset=".56" stop-color="#3b293c" stop-opacity=".66"/>
+      <stop offset=".76" stop-color="#645665" stop-opacity=".52"/>
+      <stop offset=".9" stop-color="#aba3ab" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-8" cx="720.36" cy="579" fx="720.36" fy="579" r="422.13" gradientTransform="translate(-406.99 -350.06) scale(1.6)" xlink:href="#radial-gradient-7"/>
+    <radialGradient id="radial-gradient-9" cx="726.97" cy="838.25" fx="726.97" fy="838.25" gradientTransform="translate(-406.99 -506.8) scale(1.6)" xlink:href="#radial-gradient-7"/>
+  </defs>
+  <rect class="cls-13" x=".39" y="-6.6" width="1575.48" height="1372.26"/>
+  <polygon class="cls-10" points="269.87 685.51 243.06 548.27 770.97 468.74 770.38 467.6 212.11 532.59 268.21 685.51 269.87 685.51"/>
+  <text class="cls-11" transform="translate(306.39 836.52)"><tspan x="0" y="0">CRANE TRUCKS</tspan></text>
+  <g>
+    <path class="cls-10" d="M308.1,742.29l-30.89-163.2h32.43l12.31,65.06h100.63l-12.31-65.06h32.41l30.89,163.2h-32.41l-12.31-65.05h-100.63l12.31,65.05h-32.43Z"/>
+    <path class="cls-10" d="M465.14,611.73c-1.12-5.89-.68-11.33,1.29-16.32,1.99-4.99,5.17-8.96,9.56-11.9,4.41-2.95,9.53-4.43,15.38-4.43h97.02c5.86,0,11.55,1.48,17.05,4.43,5.5,2.94,10.23,6.91,14.18,11.9,3.95,4.98,6.48,10.42,7.59,16.32l24.71,130.56h-32.87l-10.17-53.72h-96.8l10.17,53.72h-32.41l-24.71-130.56ZM602.72,655.93l-8.07-42.62c-.06-.3-.26-.6-.63-.9-.35-.3-.67-.45-.98-.45h-94.09c-.31,0-.58.15-.81.45-.25.3-.34.61-.29.9l8.07,42.62h96.8Z"/>
+    <path class="cls-10" d="M674.25,742.29l-30.85-162.97h129.45c5.84,0,11.53,1.48,17.03,4.42,5.52,2.95,10.25,6.92,14.2,11.9,3.95,4.99,6.46,10.43,7.58,16.32l8.15,43.06c1.12,5.89.65,11.3-1.42,16.2-2.07,4.92-5.31,8.84-9.71,11.79-4.39,2.95-9.51,4.43-15.36,4.43l-96.98.22,10.34,54.63h-32.43ZM691.41,654.57h94.11c.29,0,.57-.11.83-.34.25-.22.35-.49.29-.79l-7.59-40.12c-.06-.3-.26-.6-.61-.9-.37-.3-.69-.45-.98-.45h-94.11c-.29,0-.58.15-.81.45-.24.3-.32.61-.27.9l7.59,40.12c.06.3.25.57.59.79.34.23.67.34.96.34ZM801.66,742.29l-58.84-57.57h42.54l48.59,47.37,1.93,10.2h-34.22Z"/>
+    <path class="cls-10" d="M855.47,742.29l-30.89-163.2h32.21l30.89,163.2h-32.21Z"/>
+    <path class="cls-10" d="M909.07,742.4l-6.52-34.46,95.31-95.87h-113.46l-6.22-32.87h162.08l6.52,34.46-95.31,95.87h113.46l6.22,32.87h-162.08Z"/>
+  </g>
+  <path class="cls-10" d="M1234.49,579l-167.25.4,35.87,185.69-790.65.31v14.95l812.81-.22c2.65-.03-2.95-.04,1.37-.05.21,0,.41-.03.61-.03s.39.03.59.03c48.86,0,69.42,44.52,69.42,56.9h103.36v-84.52s-66.13-173.47-66.13-173.47ZM1135.27,649.95l-8.02-43.33h97.42l27.68,71.8-117.08-28.47Z"/>
+  <line class="cls-4" x1="973.61" y1="93.49" x2="1191.7" y2="1227.45"/>
+  <line class="cls-1" x1="948.26" y1="101.98" x2="1166.36" y2="1235.94"/>
+  <line class="cls-6" x1="539.33" y1="25.53" x2="787.62" y2="1332.18"/>
+  <line class="cls-9" x1="516.25" y1="35.9" x2="764.54" y2="1342.55"/>
+  <line class="cls-5" x1="194.85" y1="152.57" x2="412.95" y2="1286.54"/>
+  <line class="cls-8" x1="1029.63" y1="106.23" x2="1247.72" y2="1240.2"/>
+  <line class="cls-2" x1="-216.21" y1="765.41" x2="1699.62" y2="765.41"/>
+  <line class="cls-3" x1="-209.03" y1="579" x2="1706.8" y2="579"/>
+  <line class="cls-7" x1="-198.43" y1="838.25" x2="1717.4" y2="838.25"/>
+  <text class="cls-12" transform="translate(1005.71 59.98)"><tspan x="0" y="0"> </tspan></text>
+</svg>

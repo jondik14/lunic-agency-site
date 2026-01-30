@@ -66,7 +66,7 @@ const ProcessSection: React.FC = () => {
               </div>
               </div>
               <div className="process-card-reflection hidden md:block absolute top-full -mt-px left-0 right-0 h-[200px] overflow-hidden pointer-events-none rounded-b-3xl" style={{ opacity: 0.6 }} aria-hidden>
-                <img src="/Assets/Disocvery first reflection.png" alt="" className="w-full h-full object-cover object-top" />
+                <img src="/Assets/discovery-first-reflection.png" alt="" className="w-full h-full object-cover object-top" />
               </div>
             </motion.div>
           </div>
@@ -90,13 +90,13 @@ const ProcessSection: React.FC = () => {
                 </div>
                 <div className="process-card-bottom">
                   <div className="phoneStage">
-                    <img className="phone phoneLeft" src="/Assets/mobile shot 1.png" alt="" />
-                    <img className="phone phoneRight" src="/Assets/mobile shot 2.png" alt="" />
+                    <img className="phone phoneLeft" src="/Assets/mobile-shot-1.png" alt="" />
+                    <img className="phone phoneRight" src="/Assets/mobile-shot-2.png" alt="" />
                   </div>
                 </div>
               </div>
               <div className="process-card-reflection hidden md:block absolute top-full -mt-px left-0 right-0 h-[200px] overflow-hidden pointer-events-none rounded-b-3xl" style={{ opacity: 0.6 }} aria-hidden>
-                <img src="/Assets/mobiole first design refleciton.png" alt="" className="w-full h-full object-cover object-top" />
+                <img src="/Assets/mobile-first-design-reflection.png" alt="" className="w-full h-full object-cover object-top" />
               </div>
             </motion.div>
           </div>
@@ -120,12 +120,12 @@ const ProcessSection: React.FC = () => {
                 </div>
                 <div className="process-card-bottom">
                   <div className="flex flex-wrap items-center justify-center w-full md:w-[538px] h-auto md:h-[300px]">
-                    <img src="/Assets/mcbook google data.png" alt="MacBook with analytics" className="w-full max-w-full md:max-w-[770px] h-auto object-contain" />
+                    <img src="/Assets/mcbook-google-data.png" alt="MacBook with analytics" className="w-full max-w-full md:max-w-[770px] h-auto object-contain" />
                   </div>
                 </div>
               </div>
               <div className="process-card-reflection hidden md:block absolute top-full -mt-px left-0 right-0 h-[200px] overflow-hidden pointer-events-none rounded-b-3xl" style={{ opacity: 0.6 }} aria-hidden>
-                <img src="/Assets/Conversion dirven reflection.png" alt="" className="w-full h-full object-cover object-top object-[right_top]" />
+                <img src="/Assets/conversion-driven-reflection.png" alt="" className="w-full h-full object-cover object-top object-[right_top]" />
               </div>
             </motion.div>
           </div>

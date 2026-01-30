@@ -9,8 +9,8 @@ const projects = [
     tagline: "Premium roofing contractor",
     challenge: "Outdated website failing to capture high-value commercial leads",
     solution: "Complete redesign with conversion-focused UX and trust signals",
-    desktopAsset: "/Assets/MacBook Air 13_ - 4th Gen - Midnight 1.png",
-    mobileAsset: "/Assets/iPhone 16 Pro Max - Black Titanium - Portrait 1.png",
+    desktopAsset: "/Assets/macbook-air-13-4th-gen-midnight-1.png",
+    mobileAsset: "/Assets/iphone-16-pro-max-black-titanium-portrait-1.png",
     coverImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1600&auto=format&fit=crop",
     metrics: [
       { label: "Conversion Rate", value: "+38%", color: "text-studio-accent" },
@@ -24,8 +24,8 @@ const projects = [
     tagline: "Emergency repair specialists",
     challenge: "Text-heavy site not reflecting operational scale or reliability",
     solution: "Minimalist UI overhaul focused on speed and trust building",
-    desktopAsset: "/Assets/MacBook Air 13_ - 4th Gen - Midnight 1.png",
-    mobileAsset: "/Assets/iPhone 16 Pro Max - Black Titanium - Portrait 1.png",
+    desktopAsset: "/Assets/macbook-air-13-4th-gen-midnight-1.png",
+    mobileAsset: "/Assets/iphone-16-pro-max-black-titanium-portrait-1.png",
     coverImage: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1600&auto=format&fit=crop",
     metrics: [
       { label: "User Engagement", value: "+52%", color: "text-orange-500" },
@@ -39,8 +39,8 @@ const projects = [
     tagline: "Architectural preservation experts",
     challenge: "Exceptional work hidden behind an amateur digital presence",
     solution: "Portfolio-focused approach emphasizing precision and detail",
-    desktopAsset: "/Assets/MacBook Air 13_ - 4th Gen - Midnight 1.png",
-    mobileAsset: "/Assets/iPhone 16 Pro Max - Black Titanium - Portrait 1.png",
+    desktopAsset: "/Assets/macbook-air-13-4th-gen-midnight-1.png",
+    mobileAsset: "/Assets/iphone-16-pro-max-black-titanium-portrait-1.png",
     coverImage: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1600&auto=format&fit=crop",
     metrics: [
       { label: "Lead Quality", value: "Premium", color: "text-emerald-500" },

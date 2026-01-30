@@ -6,7 +6,7 @@ import * as THREE from 'three';
 import type { Group, Material } from 'three';
 
 /* GLB at public/Assets/iPhone 17 Pro.glb. Video at public/Assets/demo.mp4 */
-const GLB_URL = '/Assets/iPhone 17 Pro.glb';
+const GLB_URL = '/Assets/iphone-17-pro.glb';
 const VIDEO_URL = '/Assets/demo.mp4';
 
 /* Video plane: slightly above screen to avoid z-fight. Size tuned to phone bezel (aspect ~9:19.5). */

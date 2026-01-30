@@ -79,8 +79,8 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   // White logo only when header is transparent AND the area behind the logo is fully in a dark section (not during the light→dark transition).
   const headerHasLightBg = isScrolled || isMobileMenuOpen;
   const logoSrc = (!headerHasLightBg && isLogoAreaDark)
-    ? '/Assets/White logotype.svg'
-    : '/Assets/Blue Logotype.svg';
+    ? '/Assets/white-logotype.svg'
+    : '/Assets/blue-logotype.svg';
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     if (href.startsWith('/#')) {

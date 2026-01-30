@@ -22,13 +22,13 @@ const analyticsScreenshots = [
   { 
     label: "Google Analytics", 
     tool: "GA4 Dashboard", 
-    image: "/Assets/google analytics page.png",
+    image: "/Assets/google-analytics-page.png",
     description: "Track conversions, user behavior, and performance metrics"
   },
   { 
     label: "Search Console", 
     tool: "Google Search Console", 
-    image: "/Assets/google search console page .png",
+    image: "/Assets/google-search-console-page.png",
     description: "Monitor search performance and indexing"
   }
 ];

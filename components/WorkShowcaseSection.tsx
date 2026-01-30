@@ -214,8 +214,8 @@ type SitesGalleryItem = {
 };
 
 const SITES_GALLERY_DATA: SitesGalleryItem[] = [
-  { title: 'Greenchain', media: 'video', src: '/Assets/greenchain showcase.mp4', label: 'Greenchain project showcase' },
-  { title: 'Nova Mesh', media: 'video', src: '/Assets/novemesh showcase.mp4', label: 'Nova Mesh project showcase' },
+  { title: 'Greenchain', media: 'video', src: '/Assets/greenchain-showcase.mp4', label: 'Greenchain project showcase' },
+  { title: 'Nova Mesh', media: 'video', src: '/Assets/novemesh-showcase.mp4', label: 'Nova Mesh project showcase' },
 ];
 
 const WorkShowcaseSection: React.FC = () => {
@@ -290,7 +290,7 @@ const WorkShowcaseSection: React.FC = () => {
               >
                 <div className="relative w-full aspect-[16/10] min-h-[200px] sm:min-h-[240px]">
                   <video
-                    src="/Assets/hariz showcase.mp4"
+                    src="/Assets/hariz-showcase.mp4"
                     muted
                     loop
                     playsInline

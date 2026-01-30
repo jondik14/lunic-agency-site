@@ -51,13 +51,13 @@ const HarizCraneTrucks: React.FC = () => {
               <div className="relative flex items-end justify-center gap-6 w-full max-w-6xl">
                 {/* Desktop Mockup */}
                 <img 
-                  src="/Assets/MacBook Air 13_ - 4th Gen - Midnight 1.png" 
+                  src="/Assets/macbook-air-13-4th-gen-midnight-1.png" 
                   alt="Hariz Crane Trucks website on desktop"
                   className="w-full max-w-4xl drop-shadow-2xl"
                 />
                 {/* Mobile Mockup */}
                 <img 
-                  src="/Assets/iPhone 16 Pro Max - Black Titanium - Portrait 1.png" 
+                  src="/Assets/iphone-16-pro-max-black-titanium-portrait-1.png" 
                   alt="Hariz Crane Trucks website on mobile"
                   className="absolute -right-8 -bottom-8 w-32 md:w-40 lg:w-48 drop-shadow-2xl"
                 />

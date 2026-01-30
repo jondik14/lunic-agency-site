@@ -280,7 +280,7 @@ export const TEAM_MEMBERS = [
     name: "Luke Niccol",
     role: "Founder & Lead Designer",
     bio: "With 8+ years in digital design, Luke leads strategy and creative direction. He's passionate about creating websites that work as hard as the businesses they represent.",
-    image: "/Assets/bw portait.png",
+    image: "/Assets/bw-portrait.png",
     linkedin: "#",
     credentials: ["UI/UX Design", "Brand Strategy", "Webflow Expert"]
   }

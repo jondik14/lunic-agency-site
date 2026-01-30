@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { motion } from 'motion/react';
 
-const PHONE_IMAGE_URL = '/Assets/iPhone 16 Pro Max - Black Titanium - Portrait 1.png';
+const PHONE_IMAGE_URL = '/Assets/iphone-16-pro-max-black-titanium-portrait-1.png';
 const VIDEO_URL = '/Assets/demo.mp4';
 
 const HeroIphoneStatic: React.FC = () => {

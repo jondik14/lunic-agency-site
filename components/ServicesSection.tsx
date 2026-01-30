@@ -40,7 +40,7 @@ const ServicesSection: React.FC = () => {
           aria-label="Ambient background video"
           style={{ willChange: 'auto' }}
         >
-          <source src="/Assets/updated magentic videop.mp4" type="video/mp4" />
+          <source src="/Assets/updated-magentic-videop.mp4" type="video/mp4" />
         </video>
         {/* Blur overlay: fades in from top (mask) so no harsh line; video clear at top, more blurred/dark toward bottom */}
         <div

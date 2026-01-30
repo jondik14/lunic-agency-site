@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import MetallicPaint, { parseLogoImage } from './MetallicPaint';
 
-const LOGO_PATH = '/Assets/Black small logo.svg';
+const LOGO_PATH = '/Assets/black-small-logo.svg';
 
 const HeroMetallicLogo: React.FC = () => {
   const [imageData, setImageData] = useState<ImageData | null>(null);

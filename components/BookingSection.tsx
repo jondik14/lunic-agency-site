@@ -31,7 +31,7 @@ const BookingSection: React.FC = () => {
               {/* Founder Info - Simple */}
               <div className="flex gap-4 items-center">
                 <img 
-                  src="/Assets/bw portait.png" 
+                  src="/Assets/bw-portrait.png" 
                   alt="Luke Niccol" 
                   className="w-12 h-12 rounded-full object-cover border border-white/10"
                 />
