@@ -1,0 +1,40 @@
+{
+  "name": "lunic-studio-web-design",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@google/genai": "latest",
+    "@lottiefiles/dotlottie-react": "^0.17.12",
+    "@microsoft/clarity": "^1.0.2",
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.5.0",
+    "@shadergradient/react": "^2.4.20",
+    "camera-controls": "^3.1.2",
+    "clsx": "^2.1.1",
+    "gsap": "^3.14.2",
+    "lenis": "^1.3.17",
+    "lucide-react": "^0.562.0",
+    "motion": "^12.23.26",
+    "ogl": "^1.0.11",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "react-router-dom": "^7.11.0",
+    "swiper": "^12.0.3",
+    "tailwind-merge": "^3.4.0",
+    "three": "^0.182.0",
+    "three-stdlib": "^2.36.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@types/three": "^0.182.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0"
+  }
+}

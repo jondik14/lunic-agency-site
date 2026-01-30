@@ -1,0 +1,18 @@
+/* Character-by-character reveal: line-mask (overflow clip) > line > char */
+.line-mask {
+  position: relative;
+  display: block;
+  overflow: clip;
+  text-align: start;
+}
+
+.line {
+  position: relative;
+  display: block;
+  text-align: start;
+}
+
+.line .char {
+  position: relative;
+  display: inline-block;
+}

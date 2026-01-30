@@ -1,0 +1,496 @@
+/* Cirka from Fonts/Cirka (project assets) */
+@font-face {
+  font-family: 'Cirka';
+  src: url('./Fonts/Cirka/Cirka-Light.woff2') format('woff2'),
+       url('./Fonts/Cirka/Cirka-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cirka';
+  src: url('./Fonts/Cirka/Cirka-Regular.woff2') format('woff2'),
+       url('./Fonts/Cirka/Cirka-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cirka';
+  src: url('./Fonts/Cirka/Cirka-Bold.woff2') format('woff2'),
+       url('./Fonts/Cirka/Cirka-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Dominique fallback/utility if still needed */
+@font-face {
+  font-family: 'Dominique';
+  src: url('/Fonts/Dominique/Dominique-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+
+/* What we build — background video: no fade/transition (clean + reliable) */
+.hero-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1 !important;
+  transition: none !important;
+  animation: none !important;
+}
+.services-bg-video-layer {
+  transition: none !important;
+  animation: none !important;
+}
+
+/* Mobile-First Design card: cropped "phone window" at bottom, absolute phones, negative bottom for cut-off */
+.mobileCard {
+  position: relative;
+  overflow: hidden;
+}
+
+.mobileCard .cardTop {
+  position: relative;
+  z-index: 3;
+}
+
+.mobileCard .phoneStage {
+  position: relative;
+  margin-top: 18px;
+  height: clamp(220px, 26vw, 320px);
+  overflow: hidden;
+  border-radius: 22px;
+}
+
+.mobileCard .phoneStage::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 55%, rgba(0,0,0,0.35) 100%);
+  z-index: 2;
+}
+
+.mobileCard .phone {
+  position: absolute;
+  height: auto;
+  display: block;
+  will-change: transform;
+  transition: transform 650ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  filter: drop-shadow(0 24px 40px rgba(0,0,0,0.45));
+}
+
+.mobileCard .phoneLeft {
+  left: 18px;
+  bottom: -64px;
+  width: clamp(170px, 22vw, 260px);
+  transform: rotate(-10deg) translateY(0);
+  z-index: 1;
+}
+
+.mobileCard .phoneRight {
+  left: 0;
+  top: -24px;
+  width: clamp(210px, 26vw, 330px);
+  transform: rotate(8deg) translateY(0);
+  z-index: 2;
+}
+
+.mobileCard:hover .phoneLeft {
+  transform: rotate(-10deg) translateY(-14px);
+}
+
+.mobileCard:hover .phoneRight {
+  transform: rotate(8deg) translateY(-14px);
+}
+
+@media (max-width: 640px) {
+  .mobileCard .phoneLeft {
+    bottom: -52px;
+    transform: rotate(-6deg) translateY(0);
+  }
+  .mobileCard .phoneRight {
+    top: -24px;
+    transform: rotate(6deg) translateY(0);
+  }
+  .mobileCard:hover .phoneLeft {
+    transform: rotate(-6deg) translateY(-14px);
+  }
+  .mobileCard:hover .phoneRight {
+    transform: rotate(6deg) translateY(-14px);
+  }
+}
+
+/* Our Process — per-card reflection; gradient under floor removed to avoid interfering with reflections */
+.process-section-floor {
+  position: relative;
+}
+.process-card-wrap {
+  position: relative;
+  z-index: 1;
+}
+/* Reflection images under each process card — full width, gentle fade at bottom */
+.process-card-reflection {
+  left: 0;
+  right: 0;
+  width: 100%;
+  -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+}
+
+/* Hide reflections on mobile */
+@media (max-width: 767px) {
+  .process-card-reflection {
+    display: none !important;
+  }
+  
+  /* Ensure cards stack properly on mobile */
+  .process-cards-row {
+    gap: clamp(1.5rem, 4vw, 2rem);
+  }
+  
+  /* Adjust card height on mobile for better stacking */
+  .process-card {
+    height: auto;
+    min-height: 400px;
+  }
+}
+.process-card {
+  height: 500px;
+  border-radius: 24px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.process-card-top {
+  flex-shrink: 0;
+}
+.process-card-bottom {
+  flex-shrink: 0;
+}
+/* Mobile-First card: phone stage and phone positioning within fixed 500px card */
+.process-card .phoneStage {
+  height: 320px;
+  margin-top: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.process-card .phoneLeft {
+  left: 3px;
+  top: 38px;
+  bottom: auto;
+  width: 270px;
+  height: 380px;
+  object-fit: contain;
+}
+.process-card .phoneRight {
+  left: 114px;
+  top: 3px;
+  width: 270px;
+  height: 380px;
+  object-fit: contain;
+}
+
+/* Footer link underline animation — grows from left on hover/focus */
+.footer-link-underline {
+  position: relative;
+  display: inline-block;
+}
+.footer-link-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+}
+.footer-link-underline:hover::after,
+.footer-link-underline:focus-visible::after {
+  transform: scaleX(1);
+}
+
+/* Let's collaborate: blur overlay so hexagons are softer but still visible */
+.contact-hex-blur {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Vercel Guidelines: Touch interactions */
+button, a, [role="button"] {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: rgba(50, 143, 255, 0.2);
+}
+
+/* Ensure minimum touch target size on mobile (44px) */
+@media (max-width: 768px) {
+  button, a, [role="button"], input[type="checkbox"], input[type="radio"] {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Allow smaller visual targets with expanded hit areas */
+  .touch-target-expanded {
+    position: relative;
+  }
+  
+  .touch-target-expanded::before {
+    content: '';
+    position: absolute;
+    inset: -8px;
+  }
+}
+
+/* Focus-within for grouped controls */
+.form-group:focus-within {
+  outline: 2px solid #328FFF;
+  outline-offset: 2px;
+  border-radius: 8px;
+}
+
+/* Trust CTA: moving gradients with dark/light blue variation. Tweak duration for speed. */
+@keyframes trustCtaGradient {
+  0% { background-position: 0% 50%; }
+  25% { background-position: 100% 50%; }
+  50% { background-position: 100% 100%; }
+  75% { background-position: 0% 100%; }
+  100% { background-position: 0% 50%; }
+}
+.trust-cta-gradient-layer {
+  animation: trustCtaGradient 16s ease-in-out infinite;
+}
+@keyframes trustCtaGradient2 {
+  0%, 100% { background-position: 0% 0%; }
+  50% { background-position: 100% 100%; }
+}
+.trust-cta-gradient-layer-2 {
+  animation: trustCtaGradient2 14s ease-in-out infinite;
+}
+
+/* Founder signature block: slow moving gradient, dark enough for white text */
+@keyframes founderSignatureGradient {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+.founder-signature-gradient {
+  animation: founderSignatureGradient 8s ease-in-out infinite;
+}
+
+/* CTA carousel in Discovery First — seamless scroll; disabled when prefers-reduced-motion */
+@keyframes ctaCarousel {
+  to { transform: translateX(-50%); }
+}
+@keyframes ctaCarouselReverse {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
+
+/* Vercel Guidelines: Prefers reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  /* Services section: hide background video and overlay; section bg-black remains as static fallback */
+  .services-bg-video-layer,
+  .services-bg-overlay-layer {
+    display: none !important;
+  }
+  .cta-carousel-inner {
+    animation: none !important;
+  }
+  /* Trust CTA: freeze gradients when prefers-reduced-motion. */
+  .trust-cta-gradient-layer,
+  .trust-cta-gradient-layer-2 {
+    animation: none !important;
+  }
+  .founder-signature-gradient {
+    animation: none !important;
+  }
+  /* Viewport bottom: softer opacity fade (no blur in main design anyway). */
+  .viewport-bottom-blur {
+    background: linear-gradient(to top, rgba(249,248,246,0.6) 0%, rgba(249,248,246,0.2) 50%, transparent 100%) !important;
+  }
+}
+
+/* Screen reader only - visually hidden but accessible to assistive tech */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Responsive scaling utilities */
+* {
+  box-sizing: border-box;
+}
+
+/* Ensure containers have proper constraints */
+.container-responsive {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+/* Prevent horizontal overflow */
+body, html {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Hero iPhone - mobile: show only top half, desktop: full */
+@media (max-width: 767px) {
+  .hero-phone-container {
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+  }
+  
+  .hero-phone-image {
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+    object-position: top;
+  }
+  
+  .hero-video-container {
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+  }
+  
+  .hero-phone-video {
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+    object-position: top;
+  }
+  
+  .hero-video-fade {
+    background: linear-gradient(to bottom, transparent 0%, transparent 10%, rgba(0,0,0,0.1) 30%, rgba(0,0,0,0.4) 60%, rgba(0,0,0,0.8) 90%, rgba(0,0,0,1) 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-phone-container,
+  .hero-phone-image,
+  .hero-video-container,
+  .hero-phone-video {
+    clip-path: none;
+  }
+  
+  .hero-video-fade {
+    background: linear-gradient(to bottom, transparent 0%, transparent 30%, rgba(0,0,0,0.2) 70%, rgba(0,0,0,0.6) 90%, rgba(0,0,0,0.9) 100%);
+  }
+}
+
+/* Vercel Guidelines: Focus visible */
+:focus-visible {
+  outline: 2px solid #328FFF;
+  outline-offset: 2px;
+}
+
+/* Sites slider (sites that get noticed): pagination bullets */
+.sites-slider .swiper-pagination-bullet {
+  background: #328FFF;
+  opacity: 0.4;
+}
+.sites-slider .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+/* Blog post content — Work Sans for body; Cirka for h2/h3 only */
+.blog-content {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.75;
+  color: #666666;
+}
+
+.blog-content p {
+  margin-bottom: 1.25em;
+  color: #666666;
+}
+
+.blog-content p:last-child {
+  margin-bottom: 0;
+}
+
+.blog-content h2 {
+  font-family: 'Cirka', serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-top: 2em;
+  margin-bottom: 0.75em;
+  color: #1A1A1A;
+}
+
+.blog-content h3 {
+  font-family: 'Cirka', serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  color: #1A1A1A;
+}
+
+.blog-content ul,
+.blog-content ol {
+  margin: 1em 0;
+  padding-left: 1.5em;
+  color: #666666;
+}
+
+.blog-content ul { list-style-type: disc; }
+.blog-content ol { list-style-type: decimal; }
+
+.blog-content li {
+  margin: 0.5em 0;
+}
+
+.blog-content a {
+  color: #328FFF;
+  text-decoration: none;
+}
+
+.blog-content a:hover {
+  text-decoration: underline;
+}
+
+.blog-content strong {
+  color: #1A1A1A;
+  font-weight: 600;
+}
+
+.blog-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+  margin: 1.5rem 0;
+  display: block;
+}
+
