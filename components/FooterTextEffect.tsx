@@ -24,8 +24,8 @@ const FooterTextEffect: React.FC = () => {
   const startTimeRef = useRef<number>(0);
 
   const text = "LUNIC Studio";
-  const hexSize = 4.5; 
-  const spacing = 8; 
+  const hexSize = 4.5;
+  const spacing = 8;
   const interactionRadius = 320; 
 
   useEffect(() => {
@@ -65,7 +65,7 @@ const FooterTextEffect: React.FC = () => {
     const offCtx = offscreen.getContext('2d');
     if (!offCtx) return;
 
-    const fontSize = width * 0.185; 
+    const fontSize = width * 0.185;
     offCtx.font = `bold ${fontSize}px Cirka, serif`;
     offCtx.textAlign = 'center';
     offCtx.textBaseline = 'middle';
@@ -81,7 +81,6 @@ const FooterTextEffect: React.FC = () => {
         const posX = x + offset;
         const posY = y;
         const pixelIdx = (Math.floor(posY) * width + Math.floor(posX)) * 4;
-        
         if (imageData[pixelIdx + 3] > 128) {
           hexagons.push({
             x: posX,
@@ -227,7 +226,7 @@ const FooterTextEffect: React.FC = () => {
   return (
     <div 
       ref={containerRef} 
-      className="relative w-full h-[25vw] flex items-center justify-center overflow-hidden cursor-default bg-studio-ink"
+      className="hidden md:flex relative w-full h-[25vw] items-center justify-center overflow-hidden cursor-default bg-studio-ink"
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
     >
