@@ -37,6 +37,8 @@ const BrandIdentitySection: React.FC = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.2, ease: [0.25, 0.1, 0.25, 1] }}
                 src="/Assets/hariz-logo-lines.svg"
+                loading="lazy"
+                decoding="async"
                 alt="Hariz Crane Trucks Logo"
                 className="w-full max-w-xs h-auto"
               />

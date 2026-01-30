@@ -86,6 +86,8 @@ const DeviceModel: React.FC<{ desktopAsset: string; mobileAsset: string; progres
             src={desktopAsset} 
             alt="MacBook" 
             className="w-[85%] md:w-[90%] h-auto object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.15)]"
+            loading="lazy"
+            decoding="async"
           />
         </motion.div>
         
@@ -103,6 +105,8 @@ const DeviceModel: React.FC<{ desktopAsset: string; mobileAsset: string; progres
             alt="iPhone" 
             className="h-[45%] md:h-[55%] w-auto object-contain drop-shadow-[0_15px_40px_rgba(0,0,0,0.2)]"
             style={{ maxHeight: "280px" }}
+            loading="lazy"
+            decoding="async"
           />
         </motion.div>
         

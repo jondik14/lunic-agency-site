@@ -111,6 +111,8 @@ const FeaturedProjectCard: React.FC<FeaturedProjectProps> = ({
                     src={macbookImage} 
                     alt={`${title} on MacBook`}
                     className="w-full max-w-md drop-shadow-2xl"
+                    loading="lazy"
+                    decoding="async"
                   />
                 ) : (
                   <div className="w-full max-w-md aspect-[16/10] bg-white/10 rounded-lg flex items-center justify-center border border-white/20">
@@ -132,6 +134,8 @@ const FeaturedProjectCard: React.FC<FeaturedProjectProps> = ({
                     src={iphoneImage} 
                     alt={`${title} on iPhone`}
                     className="w-24 lg:w-32 drop-shadow-2xl"
+                    loading="lazy"
+                    decoding="async"
                   />
                 ) : (
                   <div className="w-24 lg:w-32 aspect-[9/19] bg-white/10 rounded-2xl flex items-center justify-center border border-white/20">

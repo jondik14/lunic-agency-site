@@ -34,6 +34,8 @@ const BookingSection: React.FC = () => {
                   src="/Assets/bw-portrait.png" 
                   alt="Luke Niccol" 
                   className="w-12 h-12 rounded-full object-cover border border-white/10"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div>
                   <p className="font-medium text-white text-sm">Luke Niccol</p>

@@ -252,6 +252,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                     src={logoSrc} 
                     alt="LUNIC Studio" 
                     className="h-12 lg:h-14 w-auto transition-opacity duration-200"
+                    decoding="async"
                   />
                 </Link>
               </motion.div>
@@ -322,6 +323,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                   src={logoSrc} 
                   alt="LUNIC Studio" 
                   className="h-12 w-auto max-w-full transition-opacity duration-200"
+                  decoding="async"
                 />
               </Link>
             </motion.div>

@@ -3,6 +3,7 @@ import { motion, useScroll, useTransform } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, ExternalLink, Globe, Palette, Plus } from 'lucide-react';
 import ServicesHexagonGrid from './ServicesHexagonGrid';
+import LazyVideo from './LazyVideo';
 
 interface CounterProps {
   end: number;
@@ -129,7 +130,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       {/* Media */}
       <div className={`relative ${isFeatured ? 'aspect-[16/10]' : 'aspect-[4/3]'} overflow-hidden`}>
         {video ? (
-          <video
+          <LazyVideo
             ref={videoRef}
             src={video}
             muted
@@ -143,7 +144,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             }}
           />
         ) : image ? (
-          <img src={image} alt={`${title} project showcase`} className="w-full h-full object-contain" />
+          <img src={image} alt={`${title} project showcase`} className="w-full h-full object-contain" loading="lazy" decoding="async" />
         ) : (
           <div className="w-full h-full bg-gradient-to-br from-studio-accent/20 to-transparent" />
         )}
@@ -289,7 +290,7 @@ const WorkShowcaseSection: React.FC = () => {
                 style={{ scale: videoScale }}
               >
                 <div className="relative w-full aspect-[16/10] min-h-[200px] sm:min-h-[240px]">
-                  <video
+                  <LazyVideo
                     src="/Assets/hariz-showcase.mp4"
                     muted
                     loop
@@ -340,7 +341,7 @@ const WorkShowcaseSection: React.FC = () => {
                 {/* Media: fill height, crop by width */}
                 <div className="absolute inset-0 overflow-hidden">
                   {item.media === 'video' ? (
-                    <video
+                    <LazyVideo
                       src={item.src}
                       muted
                       loop
@@ -356,6 +357,7 @@ const WorkShowcaseSection: React.FC = () => {
                       alt={item.alt ?? item.title} 
                       className="absolute inset-0 w-full h-full object-cover object-center" 
                       loading="lazy"
+                      decoding="async"
                       style={{ objectFit: 'cover', objectPosition: 'center' }}
                     />
                   )}

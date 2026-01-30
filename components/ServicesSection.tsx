@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { Globe, RefreshCw, Smartphone, MessageCircle } from 'lucide-react';
 import GlassSurface from './GlassSurface';
+import LazyVideo from './LazyVideo';
 
 const SITUATIONS = [
   {
@@ -30,18 +31,17 @@ const ServicesSection: React.FC = () => {
   return (
     <section id="services" className="relative z-20 bg-black overflow-hidden mt-0 md:mt-[clamp(-5rem,-10vw,-10rem)]" style={{ colorScheme: 'dark', paddingTop: 'clamp(3rem, 8vw, 10rem)', paddingBottom: 'clamp(3rem, 8vw, 10rem)' }} data-theme="dark">
       <div className="services-bg-video-layer absolute inset-0 z-0 overflow-hidden">
-        <video
+        <LazyVideo
           className="hero-video"
+          src="/Assets/updated-magentic-videop.mp4"
           autoPlay
           muted
           loop
           playsInline
-          preload="auto"
           aria-label="Ambient background video"
           style={{ willChange: 'auto' }}
-        >
-          <source src="/Assets/updated-magentic-videop.mp4" type="video/mp4" />
-        </video>
+          rootMargin="200px"
+        />
         {/* Blur overlay: fades in from top (mask) so no harsh line; video clear at top, more blurred/dark toward bottom */}
         <div
           className="absolute bottom-0 left-0 right-0 z-[1] pointer-events-none"

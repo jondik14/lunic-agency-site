@@ -102,6 +102,8 @@ const AnalyticsProofGrid: React.FC = () => {
                         src={item.image} 
                         alt={`${item.label} dashboard showing ${item.description}`}
                         className="w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-500"
+                        loading="lazy"
+                        decoding="async"
                       />
                     </div>
                     {/* Label */}

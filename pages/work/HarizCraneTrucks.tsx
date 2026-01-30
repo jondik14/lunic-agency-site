@@ -54,12 +54,16 @@ const HarizCraneTrucks: React.FC = () => {
                   src="/Assets/macbook-air-13-4th-gen-midnight-1.png" 
                   alt="Hariz Crane Trucks website on desktop"
                   className="w-full max-w-4xl drop-shadow-2xl"
+                  loading="lazy"
+                  decoding="async"
                 />
                 {/* Mobile Mockup */}
                 <img 
                   src="/Assets/iphone-16-pro-max-black-titanium-portrait-1.png" 
                   alt="Hariz Crane Trucks website on mobile"
                   className="absolute -right-8 -bottom-8 w-32 md:w-40 lg:w-48 drop-shadow-2xl"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
             </div>

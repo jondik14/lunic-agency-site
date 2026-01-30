@@ -45,6 +45,8 @@ const TrustSection: React.FC = () => {
                 src={PORTRAIT_SRC}
                 alt=""
                 className="w-full h-full object-cover object-top"
+                loading="lazy"
+                decoding="async"
               />
             </div>
           </motion.div>
