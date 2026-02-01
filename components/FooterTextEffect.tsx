@@ -53,11 +53,15 @@ const FooterTextEffect: React.FC = () => {
     const canvas = canvasRef.current;
     if (!canvas || !isFontLoaded) return;
 
-    const ctx = canvas.getContext('2d', { willReadFrequently: true });
-    if (!ctx) return;
-
     const width = canvas.width;
     const height = canvas.height;
+    if (width === 0 || height === 0) {
+      hexagonsRef.current = [];
+      return;
+    }
+
+    const ctx = canvas.getContext('2d', { willReadFrequently: true });
+    if (!ctx) return;
 
     const offscreen = document.createElement('canvas');
     offscreen.width = width;
@@ -195,12 +199,25 @@ const FooterTextEffect: React.FC = () => {
       const container = containerRef.current;
       const canvas = canvasRef.current;
       if (!container || !canvas) return;
+      const w = container.offsetWidth;
+      const h = container.offsetHeight;
+      canvas.width = w;
+      canvas.height = h;
+      if (w > 0 && h > 0) initHexagons();
+      else hexagonsRef.current = [];
+    };
+
+    const container = containerRef.current;
+    const canvas = canvasRef.current;
+    if (container && canvas && container.offsetWidth > 0 && container.offsetHeight > 0) {
       canvas.width = container.offsetWidth;
       canvas.height = container.offsetHeight;
       initHexagons();
-    };
-
-    handleResize();
+    } else if (canvas) {
+      canvas.width = 0;
+      canvas.height = 0;
+      hexagonsRef.current = [];
+    }
     window.addEventListener('resize', handleResize);
     animationRef.current = requestAnimationFrame(animate);
     return () => {

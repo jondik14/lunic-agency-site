@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
-import { motion, useScroll, useTransform } from 'motion/react';
+import { motion, useScroll, useTransform, useInView } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, ExternalLink, Globe, Palette, Plus } from 'lucide-react';
 import ServicesHexagonGrid from './ServicesHexagonGrid';
