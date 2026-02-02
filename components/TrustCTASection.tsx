@@ -7,7 +7,7 @@ const HEADLINE = 'Your website is deciding for your clients — before you ever 
 const BODY_1 = "If it's clear, fast, and credible, it earns enquiries.";
 const BODY_2 = "If it's not, they move on.";
 const SUPPORTING_LINE = 'Small changes here often make the biggest difference.';
-const CTA_LABEL = 'Request a website review';
+const CTA_LABEL = 'Book a quick chat';
 
 const TrustCTASection: React.FC = () => {
   const sectionRef = useRef<HTMLElement>(null);

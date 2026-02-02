@@ -58,7 +58,7 @@ const Home: React.FC = () => {
                 letterSpacing: '0.01em'
               }}
             >
-              I help service-based businesses upgrade their websites and digital presence so they earn trust faster, convert enquiries, and grow revenue.
+              I help service-based businesses get online and convert more enquiries—whether you already have a website or not.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 16 }}
@@ -67,7 +67,7 @@ const Home: React.FC = () => {
               className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center"
             >
               <Button to="/#contact" variant="primary">
-                Request a website review
+                Book a quick chat
               </Button>
               <Button to="/#work" variant="outline">
                 View work

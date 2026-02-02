@@ -371,11 +371,11 @@ const HarizCraneTrucks: React.FC = () => {
             className="space-y-6"
           >
             <p className="text-xl text-studio-muted leading-relaxed max-w-2xl mx-auto">
-              If your website is outdated or underperforming, I offer website reviews to identify what's holding it back.
+              Whether you need a new site or your current one isn’t pulling its weight—let’s chat and figure out the next step.
             </p>
             <div className="pt-4">
               <Button to="/#contact" variant="primary">
-                Request a website review
+                Book a quick chat
               </Button>
             </div>
           </motion.div>

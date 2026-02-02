@@ -38,7 +38,7 @@ const ProcessSection: React.FC = () => {
               We learn your business first. Then we design a site that turns visitors into enquiries. No endless revisions.
             </p>
             <Button to="/#contact" variant="primary" className="px-6 py-3 text-xs">
-              Request a website review
+              Book a quick chat
             </Button>
           </div>
         </motion.header>

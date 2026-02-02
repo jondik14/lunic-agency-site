@@ -24,13 +24,13 @@ const FreeUXAuditSection: React.FC = () => {
             transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}
           >
             <span className="text-studio-accent font-bold tracking-[0.2em] uppercase text-xs mb-4 block">
-              Free UX Audit
+              Free quick look
             </span>
             <h2 className="font-serif font-bold text-4xl md:text-5xl lg:text-6xl text-studio-ink leading-[1.05] mb-6">
-              Your website is losing leads. Let's fix it.
+              Your site might be losing leads. Let's fix it.
             </h2>
             <p className="text-lg text-studio-muted mb-8 leading-relaxed">
-              Free audit reveals exactly why clients leave. What's broken. What's working. How to fix it. Get actionable insights in 48 hours.
+              I’ll take a look and tell you what’s working, what’s not, and what to fix first. Simple, friendly, no jargon.
             </p>
 
             {/* Benefits List */}
@@ -81,22 +81,22 @@ const FreeUXAuditSection: React.FC = () => {
           >
             <div className="bg-white border border-studio-ink/10 rounded-2xl p-8 md:p-10 text-center shadow-lg">
               <h3 className="font-bold text-2xl md:text-3xl text-studio-ink mb-4">
-                Ready to fix what's broken?
+                Ready to see what’s going on?
               </h3>
               <p className="text-studio-muted mb-8 text-lg">
-                Get your free audit and discover exactly what's costing you leads.
+                Book a quick chat and I’ll get back with clear next steps.
               </p>
               
               <Link
-                to="/contact"
+                to="/#contact"
                 className="inline-flex items-center justify-center gap-3 w-full font-sans font-bold bg-studio-accent text-white hover:bg-studio-accent/90 py-4 px-8 rounded-xl text-xs tracking-widest uppercase transition-all duration-300 group shadow-lg"
               >
-                Get My Free Audit
+                Book a quick chat
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </Link>
               
               <p className="text-studio-muted text-xs mt-6">
-                Free. No spam. Actionable insights in 48 hours.
+                Free. No spam. I’ll get back within 48 hours.
               </p>
             </div>
           </motion.div>

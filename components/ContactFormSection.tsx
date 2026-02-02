@@ -28,10 +28,10 @@ const ContactFormSection: React.FC = () => {
             className="font-serif font-bold text-studio-ink leading-[1.12] max-w-[800px] mx-auto"
             style={{ fontSize: 'clamp(1.875rem, 5vw, 2.75rem)', marginBottom: 'clamp(1.25rem, 3vw, 1.5rem)' }}
           >
-            Request a website review
+            Book a quick chat
           </h2>
           <p className="text-studio-muted leading-relaxed max-w-2xl mx-auto" style={{ fontSize: 'clamp(1rem, 2.5vw, 1.125rem)' }}>
-            Share a few details. I’ll review and come back with suggestions or next steps-no pressure, no obligation.
+            Share a few details. I’ll get back with next steps—no pressure, no obligation.
           </p>
         </motion.div>
 

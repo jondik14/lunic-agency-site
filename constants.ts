@@ -20,7 +20,7 @@ export const NAV_LINKS: NavLink[] = [
   { label: 'Work', href: '/#work' },
   { label: 'Process', href: '/#process' },
   { label: 'Blog', href: '/blog' },
-  { label: 'Request a website review', href: '/#contact', isPrimary: true },
+  { label: 'Book a quick chat', href: '/#contact', isPrimary: true },
 ];
 
 export const TESTIMONIALS: Testimonial[] = [

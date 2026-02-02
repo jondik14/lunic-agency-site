@@ -4,7 +4,7 @@ import Button from './Button';
 import { trackClarityEvent, upgradeClaritySession } from '../utils/clarity';
 import { sendEmail } from '../utils/emailConfig';
 
-const HAVE_WEBSITE_OPTIONS = ['Yes, live website', 'No, starting from scratch', 'In progress / under construction', 'Not sure'] as const;
+const HAVE_WEBSITE_OPTIONS = ['Yes', 'No', 'Outdated / not really'] as const;
 const LOOKING_FOR_OPTIONS = ['A new website', 'Improve an existing site', 'Get more or better enquiries', 'Clarify messaging or positioning', 'Not sure yet'] as const;
 
 export interface IntakeFormData {
@@ -42,7 +42,7 @@ interface IntakeFormProps {
   submitLabel?: string;
 }
 
-const IntakeForm: React.FC<IntakeFormProps> = ({ className = '', id, submitLabel = 'Request a website review' }) => {
+const IntakeForm: React.FC<IntakeFormProps> = ({ className = '', id, submitLabel = 'Book a quick chat' }) => {
   const navigate = useNavigate();
   const [formData, setFormData] = useState<IntakeFormData>(initial);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -63,14 +63,14 @@ const IntakeForm: React.FC<IntakeFormProps> = ({ className = '', id, submitLabel
     
     try {
       // Format the message with all form data
-      const message = `New Website Review Request
+      const message = `New Quick Consult Request
 
 Name: ${formData.name}
 Email: ${formData.email}
 Business Name: ${formData.businessName}
 
-Current Website Status: ${formData.haveWebsite}
-Website URL: ${formData.websiteUrl || 'Not provided'}
+Do you have a website? ${formData.haveWebsite}
+${formData.haveWebsite === 'Yes' ? `Website URL: ${formData.websiteUrl || 'Not provided'}\n\n` : ''}
 
 Social Profiles:
 ${formData.socialInstagram ? `Instagram: ${formData.socialInstagram}` : ''}
@@ -84,7 +84,7 @@ ${formData.context || 'None provided'}`;
 
       // Send email
       await sendEmail({
-        subject: 'New Website Review Request',
+        subject: 'New quick consult request',
         fromName: formData.name,
         email: formData.email,
         message: message,
@@ -97,8 +97,8 @@ ${formData.context || 'None provided'}`;
       }
       
       // Track form submission in Clarity
-      trackClarityEvent('website-review-form-submitted');
-      upgradeClaritySession('website-review-form-submission');
+      trackClarityEvent('quick-consult-form-submitted');
+      upgradeClaritySession('quick-consult-form-submission');
       
       navigate('/thanks');
     } catch (error) {
@@ -206,21 +206,23 @@ ${formData.context || 'None provided'}`;
         </select>
       </div>
 
-      <div>
-        <label htmlFor="intake-website-url" className={optionalLabelClass}>Website URL <span className="text-studio-muted/70 text-xs font-normal">(optional)</span></label>
-        <input
-          type="url"
-          id="intake-website-url"
-          name="websiteUrl"
-          value={formData.websiteUrl}
-          onChange={handleChange}
-          autoComplete="url"
-          className={optionalInputClass}
-          style={inputStyle}
-          placeholder="https://…"
-          spellCheck="false"
-        />
-      </div>
+      {formData.haveWebsite === 'Yes' && (
+        <div>
+          <label htmlFor="intake-website-url" className={labelClass}>Website URL <span className="text-studio-accent">*</span></label>
+          <input
+            type="url"
+            id="intake-website-url"
+            name="websiteUrl"
+            value={formData.websiteUrl}
+            onChange={handleChange}
+            autoComplete="url"
+            className={inputClass}
+            style={inputStyle}
+            placeholder="https://…"
+            spellCheck="false"
+          />
+        </div>
+      )}
 
       <div>
         <label className={optionalLabelClass}>Social profiles <span className="text-studio-muted/70 text-xs font-normal">(optional)</span></label>

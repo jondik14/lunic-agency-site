@@ -32,7 +32,7 @@ const Contact: React.FC = () => {
             transition={{ delay: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
             className="text-xl md:text-2xl text-studio-muted leading-relaxed max-w-2xl mx-auto mb-8"
           >
-            For project enquiries, the <strong>website review</strong> is the best starting point. It helps me understand your needs and provide specific recommendations.
+            Whether you’re starting from scratch or already have a site—tell me a bit about your business and I’ll get back with next steps.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -40,7 +40,7 @@ const Contact: React.FC = () => {
             transition={{ delay: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
           >
             <Button to="/#contact" variant="primary" className="px-6 py-3 text-sm">
-              Request a website review
+              Book a quick chat
             </Button>
           </motion.div>
         </div>
@@ -102,7 +102,7 @@ const Contact: React.FC = () => {
                   Send a message
                 </h3>
                 <p className="text-studio-muted text-sm mb-6">
-                  Optional short message form. For project enquiries, the website review is the recommended starting point.
+                  Optional short message. For a quick chat about your site or getting online, use the main form on the home page.
                 </p>
                 <SimpleContactForm />
               </motion.div>
